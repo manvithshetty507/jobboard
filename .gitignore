@@ -1,0 +1,99 @@
+# -------------------------
+
+# Node
+
+# -------------------------
+
+node_modules
+**/node_modules
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# -------------------------
+
+# Environment variables
+
+# -------------------------
+
+.env
+.env.*
+!.env.example
+
+# -------------------------
+
+# Build / dist
+
+# -------------------------
+
+dist
+build
+out
+**/dist
+**/build
+
+# -------------------------
+
+# Logs
+
+# -------------------------
+
+logs
+*.log
+npm-debug.log*
+winston.log
+
+# -------------------------
+
+# Docker volumes
+
+# -------------------------
+
+infra/volumes
+infra/volumes/*
+**/infra/volumes
+
+# -------------------------
+
+# OS files
+
+# -------------------------
+
+.DS_Store
+Thumbs.db
+
+# -------------------------
+
+# IDE
+
+# -------------------------
+
+.vscode
+.idea
+*.swp
+
+# -------------------------
+
+# Coverage
+
+# -------------------------
+
+coverage
+.nyc_output
+
+# -------------------------
+
+# TypeScript
+
+# -------------------------
+
+*.tsbuildinfo
+
+# -------------------------
+
+# Docker overrides
+
+# -------------------------
+
+docker-compose.override.yml
