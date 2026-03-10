@@ -18,9 +18,23 @@
   },
   "type": "commonjs",
   "devDependencies": {
+    "@babel/cli": "^7.28.6",
+    "@babel/preset-env": "^7.29.0",
+    "@babel/preset-typescript": "^7.28.5",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "cross-env": "^10.1.0",
     "del-cli": "^7.0.0"
   },
   "dependencies": {
-    "typescript": "^5.9.3"
+    "@elastic/elasticsearch": "^9.3.4",
+    "cloudinary": "^2.9.0",
+    "express": "^5.2.1",
+    "http-status-codes": "^2.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.2.4",
+    "typescript": "^5.9.3",
+    "winston": "^3.19.0",
+    "winston-elasticsearch": "^0.19.0"
   }
 }
