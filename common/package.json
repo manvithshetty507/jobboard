@@ -1,6 +1,6 @@
 {
   "name": "@jobber_app_lib/common",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "- Interfaces\r - Cloudinary upload methods\r - Error handlers\r - Api gateway middlewares\r - Logger methods\r - Helper methods",
   "main": "build/index.js",
   "types": "build/index.d.ts",
