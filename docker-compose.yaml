@@ -37,16 +37,16 @@ services:
 
   postgres:
     container_name: postgres_container
-    image: postgres:latest
+    image: postgres:16
     restart: always
     environment:
       POSTGRES_USER: jobber
       POSTGRES_PASSWORD: api
       POSTGRES_DB: jobber_reviews
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
-      - "./infra/volumes/postgres:/var/lib/postgresql/data"
+      - ./infra/volumes/postgres:/var/lib/postgresql/data
 
   rabbitmq:
     container_name: rabbitmq_container

@@ -4,26 +4,41 @@
   "description": "This is a service which is used to send notifications, instead of a service like auth sending email directly it can just make a event, and this notification service will listen to this event and then send the email.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write ."
+    "test": "jest",
+    "format": "prettier --write .",
+    "dev": "ts-node -r tsconfig-paths/register src/server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@elastic/elasticsearch": "^8.14.0",
+    "@jobber_app_lib/common": "^1.0.2",
     "amqplib": "^0.10.9",
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
     "nodemailer": "^8.0.2",
-    "winston": "^3.19.0"
+    "tsconfig-paths": "^4.2.0",
+    "winston": "^3.19.0",
+    "winston-elasticsearch": "^0.19.0"
   },
   "devDependencies": {
+    "@types/amqplib": "^0.10.8",
+    "@types/ejs": "^3.1.5",
+    "@types/email-templates": "^10.0.4",
     "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
     "@types/node": "^25.4.0",
+    "@types/nodemailer": "^7.0.11",
+    "@types/supertest": "^7.2.0",
+    "email-templates": "^13.0.1",
     "eslint": "^9.39.4",
+    "jest": "^29.7.0",
     "nodemon": "^3.1.14",
     "prettier": "^3.8.1",
+    "supertest": "^7.2.2",
+    "ts-jest": "^29.4.6",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
