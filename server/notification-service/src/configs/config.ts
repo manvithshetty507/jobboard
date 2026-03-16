@@ -1,13 +1,13 @@
 import dotenv from 'dotenv';
 
-dotenv.config({});
+dotenv.config({ path: '.env.dev'});
 class Config  {
-    public NODE_ENV: string | undefined;
-    public CLIENT_URL: string | undefined;
-    public SENDER_EMAIL: string | undefined;
-    public SENDER_EMAIL_PASSWORD: string | undefined;
-    public RABBITMQ_ENDPOINT: string | undefined;
-    public ELASTIC_SEARCH_URL: string | undefined;
+    public NODE_ENV: string;
+    public CLIENT_URL: string;
+    public SENDER_EMAIL: string;
+    public SENDER_EMAIL_PASSWORD: string;
+    public RABBITMQ_ENDPOINT: string;
+    public ELASTIC_SEARCH_URL: string;
 
     constructor() {
         this.NODE_ENV = process.env.NODE_ENV || '';
